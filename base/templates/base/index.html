@@ -57,7 +57,7 @@
         <h1>Sell, Rent and Advertise Real Estate Properties</h1>
         <p>Find Your Perfect Home With Us</p>
 
-        <div class="">
+        <div class="search-section">
             <form action="{% url 'home' %}" method="GET" class="d-flex">
                 
               <div class="row input-group">
@@ -65,12 +65,12 @@
                
                   <select name="q" style="width: 100%; height: 100%; font-size: 20px ;" class="from-control">
                     {% for item in location %} -->
-                    <option value="{{item.location}}" name="q">{{item.location}}</option>
+                    <option value="{{item.location}}" name="q" class="location-option" style="font-size: 16px;">{{item.location}}</option>
                     {% endfor %}
                   </select>
                 </div>
                 <div class="col-4" style="height: 100%;">
-                  <input type="submit" value="Search" id="search-btn" style="background-color: rgb(238, 162, 20); color: white; height: 100%; width: 100%; border-radius: 5px; font-size: 20px;" />
+                  <input type="submit" value="Search" id="search-btn" style="background-color: rgb(238, 162, 20); color: white; height: 100%; width: 100%; border-radius: 5px; font-size: 16px;" />
                 </div>
               </div>
             </form>
