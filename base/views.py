@@ -58,14 +58,14 @@ def index(request):
     propertyItem=Property.objects.filter(
         Q(location__location__icontains=q)
     )
-    count=propertyItem.count()
+    # count=propertyItem.count()
     details=CompanyDetails.objects.all()
     location=Location.objects.all()
     context={
         "properties":propertyItem,
          "details":details,
          "location":location,
-         "count":count
+         
     }
     return render(request,"base/index.html",context)
 
