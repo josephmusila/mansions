@@ -1,1 +1,1 @@
-web:gunicorn pridde.wsgi
+web: gunicorn pridde.wsgi
