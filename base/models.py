@@ -44,7 +44,7 @@ class Property(models.Model):
     area=models.DecimalField(max_digits=9,decimal_places=2)
     bedroom=models.IntegerField()
     bathrooms=models.IntegerField()
-    Use=models.TextChoices("Use","Rent Sell")
+    Use=models.TextChoices("Use","Rent Sale")
     usage=models.CharField(max_length=100,blank=False,choices=Use.choices)
     owner=models.ForeignKey(Owners,on_delete=models.SET_NULL,null=True)
     amenities=models.TextField(blank=True)

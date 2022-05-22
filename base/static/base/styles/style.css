@@ -722,4 +722,10 @@ header .icons a:hover {
     }
 
 }
-
+.zero{
+    width: 100%;
+}
+.zero p{
+    text-align: center;
+    font-size: 30px;
+}

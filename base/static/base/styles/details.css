@@ -35,14 +35,15 @@
 #more-description{
     margin-top: 50px;
 }
-.desc-name{
+#desc-name{
     margin-top: 100px;
-    color: blue;
+    color: rgb(255, 72, 0);
     font-size: large;
+    text-align: center;
 }
 .location{
     color: rgb(206, 7, 23);
-    font-size: 30px;
+    font-size: 20px;
 }
 .social-media{
    width: 100%;

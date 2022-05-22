@@ -32,6 +32,13 @@ crossorigin="anonymous"></script>
 
 
         <div class="container-fluid" id="details-wrapper">
+            <p id="desc-name" style="margin-top: 100px;
+            color: rgb(255, 72, 0);
+            font-size: large;
+            text-decoration:underline;
+            text-align: center;">
+                {{propertyItem.name}}
+            </p>
             <div class="row">
                 <div class="col-lg-6 col-sm-12">
                     <img src="{{propertyItem.image.url}}" alt="">
@@ -39,9 +46,7 @@ crossorigin="anonymous"></script>
                 <div class="col-lg-6 col-sm-12">
                     <!-- ypu can replace this with form in includes/test.text -->
                     <div class="row" id="more-description">
-                        <p class="desc-name">
-                            {{propertyItem.name}}
-                        </p>
+                      
                         <h3> Location <span class="location">: {{propertyItem.location}}</span></h3>
                         <h3>Contacts: <span class="location">{{propertyItem.owner.phone1}}</span> </h3>
                         <h3>Contacts: <span class="location">{{propertyItem.owner.phone2}}</span> </h3>
